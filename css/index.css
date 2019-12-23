@@ -1,0 +1,18 @@
+/*맨 바깥 div*/
+#div-outermost {
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: aqua;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
