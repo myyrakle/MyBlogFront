@@ -3,17 +3,20 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="./css/index.css">
     </head>
 
     <body>
-        <div id="div-outermost">
-            <header>
+        <div id="div-outermost" class="container">
+            <header class="header">
                 <span id="left-block">
                     <a href="/index.html">블로그명</a> 
                 </span>
                 <span id="right-block">
-                    <input type="text"/> <button>검색</button>
+                    <input id="search-input-text" type="text"/> <button class="fa fa-search">
                 </span>
             </header>
 
@@ -30,7 +33,8 @@
             </section>
 
             <footer>
-                하단
+                <hr/>
+                &copy MIT license. by myyrakle. <a href="https://github.com/myyrakle">github</a>
             </footer>
         </div>
     </body>

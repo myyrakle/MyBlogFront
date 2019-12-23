@@ -1,18 +1,24 @@
 /*맨 바깥 div*/
 #div-outermost {
-    vertical-align: middle;
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 0px;
     margin-right: 150px;
     margin-bottom: 10px;
 }
 
 header {
-    background-color: aqua;
+    background-color: lightgrey;
 
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
-
+header #left-block {
+    float:none;
+    margin-left: 30px;
+}
+header #right-block {
+    float:right;
+    margin-right: 30px;
+}
