@@ -1,3 +1,24 @@
+body {
+    text-align: center;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.div {
+    vertical-align: middle;
+}
+
+#left {
+    
+}
+
+#back-button {
+    align-self: flex-start;
+}
+
 #title {
     font-size: 50pt;
 }
@@ -5,6 +26,10 @@
 #edit-text {
     width: 1000px;
     height: 500px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 #submit {

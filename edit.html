@@ -26,21 +26,46 @@
   <body background="./img/blue-sky-1189773.jpg">
     <!-- Page Header -->
     <header class="masthead" style="background-image: url('./img/about-bg.jpg')">
-        <button>Back</button> <span id="title">Post</span>
+        <div>
+            <span id="left"><button id="back-button">Back</button></span>
+            <span id="middle"><span id="title">Post</span></span>
+        </div>
     </header>
+    <hr>
 
     <!-- Main Content -->
     <div class="container">
       <div class="row">
           <form action="/" method="POST" id="edit-form">
-            <input class="align-text-top" id="edit-text" type="text">
+            <textarea class="align-text-top" id="edit-text" type="text"></textarea>
             <hr/>
-            <button id="submit" type="submit" class="btn btn-success btn-sm">제출</button>
+            <button id="submit" type="submit" class="btn btn-success btn-sm">등록</button>
           </form>
       </div>
     </div>
 
     <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <ul class="list-inline text-center">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
 
 
@@ -52,6 +77,22 @@
 
     <!-- Custom scripts for this template -->
     <script src="./js/my-blog.js"></script>
+    <script>
+        function escapeHtmlSpecialCharater()
+        {
+            var chars = {
+                '<':'&lt',
+                '>':'&gt',
+                
+            }
+        }
+
+        function onSubmitButtonClicked()
+        {
+            
+            $("#edit-form").submit();
+        }
+    </script>
   </body>
 
 </html>
