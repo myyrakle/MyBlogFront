@@ -19,29 +19,24 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/my-blog.css" rel="stylesheet">
+    <link href="./css/my-edit.css" rel="stylesheet">
 
   </head>
 
-  <body>
+  <body background="./img/blue-sky-1189773.jpg">
     <!-- Page Header -->
     <header class="masthead" style="background-image: url('./img/about-bg.jpg')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="page-heading">
-              <h1>Category</h1>
-              <span class="subheading">This is what I do.</span>
-            </div>
-          </div>
-        </div>
-      </div>
+        <button>Back</button> <span id="title">Post</span>
     </header>
 
     <!-- Main Content -->
     <div class="container">
       <div class="row">
-            <input type="text">
+          <form action="/" method="POST" id="edit-form">
+            <input class="align-text-top" id="edit-text" type="text">
+            <hr/>
+            <button id="submit" type="submit" class="btn btn-success btn-sm">제출</button>
+          </form>
       </div>
     </div>
 

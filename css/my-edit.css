@@ -1,0 +1,12 @@
+#title {
+    font-size: 50pt;
+}
+
+#edit-text {
+    width: 1000px;
+    height: 500px;
+}
+
+#submit {
+    float: right;
+}
