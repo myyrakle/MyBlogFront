@@ -25,7 +25,7 @@ header.div {
     top: 10px;
 }
 
-#input-title {
+#input-title, #input-category {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;

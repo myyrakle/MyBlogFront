@@ -40,28 +40,42 @@
     <!-- Page Header -->
     <header class="masthead">
         <div>
-            <span id="left"><a id="back-button"><h2 class="subheading">Back</h2></a></span>
-            <span id="middle"><span id="title">Post</span></span>
+            <span id="left"><a id="back-button" href="javascript:history.back();"><h2 class="subheading">Back</h2></a></span>
+            <span id="middle"><span id="title">Post Editor</span></span>
         </div>
     </header>
     <hr>
     
+    <script>
+      function onSubmit()
+      {
+        $('#input-text').val( $('.note-editable').html() );
+        $('form').submit();
+      }
+    </script>
+
     <!-- Main Content -->
     <div class="container">
       <div class="row">
         
         <form method="POST" action="#">
+          <select id="input-category" name="category" required>
+              <option selected>카테고리 선택</option>
+              <option value="카테고리1">카테고리1</option>
+              <option value="카테고리2">카테고리2</option>
+          </select>
+
           <input id="input-title" type="text" placeholder="제목을 입력하세요." required/>
           <hr/>
           
           <textarea id="summernote" name="editordata"></textarea>
 
           <hr/>
-          <button id="submit" type="button" onclick="submit()" class="btn btn-secondary">작성</button>
+          <button id="submit" type="button" onclick="onSubmit()" class="btn btn-outline-secondary">작성</button>
 
           <input type="hidden" id="input-text" name="text" required/>
 
-          <input type="hidden"/>
+          <!-- <input type="hidden"/> -->
         </form>
       </div>
     </div>
@@ -106,16 +120,12 @@
         );
 
         //에디터 폭에 맞춤
-        $('#input-title').width($('.note-editing-area').width()-10);
+        $('#input-title').width($('.note-editing-area').width()-1);
+        
+
       });
     </script>
-    <script>
-      function submit()
-      {
-        //console.log($('#input-title').val())
-        console.log($('.note-editable').html())
-      }
-    </script>
+ 
 
   </body>
 
