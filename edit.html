@@ -60,9 +60,10 @@
         
         <form method="POST" action="#">
           <select id="input-category" name="category" required>
-              <option selected>카테고리 선택</option>
-              <option value="카테고리1">카테고리1</option>
-              <option value="카테고리2">카테고리2</option>
+              <option selected disabled>카테고리 선택</option>
+              <option disabled>그룹</option>
+              <option value="카테고리1"> - 카테고리1</option>
+              <option value="카테고리2"> - 카테고리2</option>
           </select>
 
           <input id="input-title" type="text" placeholder="제목을 입력하세요." required/>
@@ -121,8 +122,6 @@
 
         //에디터 폭에 맞춤
         $('#input-title').width($('.note-editing-area').width()-1);
-        
-
       });
     </script>
  
